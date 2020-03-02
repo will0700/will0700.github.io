@@ -99,14 +99,14 @@ html {
 .project_card {
     border: solid 1.5px rgba(30, 85, 88, 0.7);
     width: 92%;
-    height: 50vh;
+    min-height: 50vh;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 1%;
     margin-bottom: 1%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    text-overflow: ellipsis;
 }
 
 .project_picture {
@@ -122,11 +122,18 @@ html {
 
 .project_details {
     width: 45%;
+    max-height: 100%;
     display: inline-block;
+    text-overflow: ellipsis;
 }
 
 .project_name {
     font-size: 2.5rem;
+}
+
+.project_type {
+    max-height: 100%;
+    text-overflow: ellipsis;
 }
 
 button {
